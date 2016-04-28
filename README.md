@@ -60,3 +60,11 @@ Apart from the javascript code and the deprecated options, there is no other cha
 Some sample codes are provided in the [lagdo/xajax-examples](https://github.com/xajax-examples) package,
 which is installed on a demo server [here](http://xajax.lagdo-software.net).
  
+###### Permissions Note
+Configure your web server's user to give write access to the vendor/lagdo/xajax-core/templates directory. 
+Your web server needs permission to create the ajax-core/templates/cache directory, or your otherwise-working code will appear to fail.
+See Ubuntu examples below:
+
+`sudo chown www-data vendor/lagdo/xajax-core/templates/cache; `
+
+`sudo chmod u+w vendor/lagdo/xajax-core/templates/cache; `
